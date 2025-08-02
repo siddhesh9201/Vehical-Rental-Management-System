@@ -21,6 +21,8 @@ public class Client {
     @Column(nullable = false)
     private String email;
 
+    private String password;
+
     @Column(nullable = false)
     private String role;
 
@@ -101,5 +103,13 @@ public class Client {
 
     public void setBookings(List<Booking> bookings) {
         this.bookings = bookings;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
